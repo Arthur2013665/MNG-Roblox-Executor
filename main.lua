@@ -204,3 +204,26 @@ end)
 
    end,
 })
+
+local Button = Tab:CreateButton({
+   Name = "Button Example",
+   Callback = function()
+      -- Exit Game Script
+
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+
+-- Function to exit the game
+local function exitGame()
+    player:Kick("You have exited the game.")
+end
+
+-- Example: Trigger exit when a button is clicked
+local exitButton = script.Parent  -- Make sure this script is a child of the button
+
+exitButton.MouseButton1Click:Connect(function()
+    exitGame()
+end)
+
+   end,
+})
