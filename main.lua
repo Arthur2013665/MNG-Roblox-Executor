@@ -70,8 +70,8 @@ local Button = MainTab:CreateButton({
 local Paragraph = MainTab:CreateParagraph({Title = "Updates", Content = "More coming on 20 november 2024.More games,more scripts,more"})
 
 
-local MiscTab = Window:CreateTab("Misc Tab", nil) -- Title, Image
-local MiscSection = MiscTab:CreateSection("Misc")
+local AntiBanTab = Window:CreateTab("Anti-ban Tab", nil) -- Title, Image
+local AntiBanSection = MiscTab:CreateSection("Misc")
 
 local Toggle = MiscTab:CreateToggle({
    Name = "Anti-ban",
